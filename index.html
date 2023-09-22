@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>brave://newtab</title>
+  <link rel="shortcut icon" href="128.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container centered-container flex-col w-screen">
+
+    <div class="top centered-container flex-item w-full h-full">
+      <div class="top-child flex-item date" id="date"></div>
+      <div class="top-child flex-item"></div>
+      <div class="top-child flex-item"></div>
+    </div>
+
+    <div class="middle centered-container">
+
+      <div class="mid-left flex-item"></div>
+
+      <div class="clock flex" id="clock">
+        <span id="hour"></span>
+        <span class="separator">:</span>
+        <span id="minute"></span>
+        <span class="separator">:</span>
+        <span id="second"></span>
+      </div>
+
+      <div class="mid-right flex-item flex w-full h-full">
+        <div class="amPm" id="amPm"></div>
+      </div>
+    </div>
+
+    <div class="bottom flex flex-item flex-col w-full h-full">
+      <div class="quote" id="quote">... Loading</div>
+      <div class="btn-container">
+        <button class="theme-btn" id="theme-btn" type="button">
+          <span class="theme-icon light">Light</span>
+          <span class="theme-icon dark">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

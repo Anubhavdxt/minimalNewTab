@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Minimal New Tab",
+  "description": "Custom new tab page with clock & quotes",
+  "version": "1.0",
+  "icons": {
+    "128": "128.png"
+  },
+  "app": {
+    "urls": ["http://google.com/"],
+    "launch": {
+      "web_url": "http://google.com/"
+    }
+  },
+  "permissions": ["unlimitedStorage"]
+}
